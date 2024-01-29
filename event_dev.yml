@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/event_microservice
+    username: postgres
+    password: 8434
+  jpa:
+    hibernate:
+      ddl-auto: update
+  application:
+    name: "events"
+server:
+  port: 8081
