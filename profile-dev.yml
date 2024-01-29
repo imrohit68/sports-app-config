@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/event_microservice
+    url: jdbc:postgresql://localhost:5432/profiles
     username: postgres
     password: 8434
   jpa:
