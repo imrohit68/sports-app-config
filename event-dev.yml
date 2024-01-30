@@ -8,3 +8,11 @@ spring:
       ddl-auto: update
 server:
   port: 8081
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8083/eureka/
