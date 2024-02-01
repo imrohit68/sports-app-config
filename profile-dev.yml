@@ -33,6 +33,6 @@ endpoints:
     enabled: true
 info:
   app:
-    name: "accounts"
+    name: "profile"
     description: "Eazy Bank Accounts Application"
     version: "1.0.0"
