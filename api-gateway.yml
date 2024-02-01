@@ -14,3 +14,21 @@ spring:
       discovery:
         locator:
           enabled: true
+          lowerCaseServiceId: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    gateway:
+      enabled: true
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: "gatewayserver"
+    description: "Sports App Gateway Server Application"
+    version: "1.0.0"
