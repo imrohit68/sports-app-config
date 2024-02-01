@@ -8,3 +8,9 @@ eureka:
       defaultZone: http://localhost:8083/eureka/
 server:
   port: 8084
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
