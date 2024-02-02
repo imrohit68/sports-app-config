@@ -6,6 +6,10 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+  cloud:
+    openfeign:
+      circuitbreaker:
+        enabled: true
 server:
   port: 8081
 eureka:
@@ -16,3 +20,10 @@ eureka:
     registerWithEureka: true
     serviceUrl:
       defaultZone: http://localhost:8083/eureka/
+resilience4j.circuitbreaker:
+  configs:
+    default:
+      slidingWindowSize: 10
+      permittedNumberOfCallsInHalfOpenState: 2
+      failureRateThreshold: 50
+      waitDurationInOpenState: 10000
