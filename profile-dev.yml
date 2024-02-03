@@ -21,18 +21,29 @@ management:
     web:
       exposure:
         include: "*"
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
   endpoint:
     shutdown:
       enabled: true
+    health:
+      probes:
+        enabled: true
   info:
     env:
       enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
 
 endpoints:
   shutdown:
     enabled: true
 info:
   app:
-    name: "profile"
-    description: "Eazy Bank Accounts Application"
+    name: "Profile Microservice"
+    description: "Sports App profile-microservice Server Application"
     version: "1.0.0"
