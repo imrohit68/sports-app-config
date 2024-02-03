@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/profiles
+    url: jdbc:postgresql://roundhouse.proxy.rlwy.net:48025/railway
     username: postgres
-    password: 8434
+    password: 2Ge-B1b1ECEBc*fCCfCd*D-4dg-A6eGF
   jpa:
     hibernate:
       ddl-auto: update

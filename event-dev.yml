@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/event_microservice
+    url: jdbc:postgresql://monorail.proxy.rlwy.net:47968/railway
     username: postgres
-    password: 8434
+    password: 1ddgD-gCfdcD-3fF623dgae-bGC-G-Cf
   jpa:
     hibernate:
       ddl-auto: update
