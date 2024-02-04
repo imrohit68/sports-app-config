@@ -18,9 +18,6 @@ spring:
       httpclient:
         connect-timeout: 1000
         response-timeout: 10s
-  metrics:
-    tags:
-      application: ${spring.application.name}
 
 management:
   endpoints:
@@ -33,6 +30,9 @@ management:
   info:
     env:
       enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
 info:
   app:
     name: "gatewayserver"
