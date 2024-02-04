@@ -10,9 +10,10 @@ spring:
     openfeign:
       circuitbreaker:
         enabled: true
-  metric:
+  metrics:
     tags:
       application: ${spring.application.name}
+
 server:
   port: 8081
 eureka:
