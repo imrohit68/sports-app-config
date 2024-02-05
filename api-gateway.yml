@@ -48,8 +48,8 @@ resilience4j.circuitbreaker:
 logging:
   level:
     com:
-      sportsApp:
-        accounts: DEBUG
+      sprotsapppoc:
+        api-gateway: DEBUG
   pattern:
     level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
 
