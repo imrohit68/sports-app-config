@@ -65,7 +65,10 @@ info:
 logging:
   level:
     com:
-      sports-app-poc:
-        Events: DEBUG
+      sportsapppoc:
+        events:
+          Events:
+            Controller:
+              EventController: DEBUG
   pattern:
     level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
