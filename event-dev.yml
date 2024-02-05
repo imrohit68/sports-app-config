@@ -62,3 +62,10 @@ info:
     name: "Event Microservice"
     description: "Sports App event-microservice Server Application"
     version: "1.0.0"
+logging:
+  level:
+    com:
+      sportsApp:
+        accounts: DEBUG
+  pattern:
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
